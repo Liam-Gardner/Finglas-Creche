@@ -1,0 +1,257 @@
+* {margin: 0; padding: 0;}
+html {overflow-y: scroll;}
+.clear {clear: both;}
+/*body {background-color: #F5F5F5}*/
+
+/* HIDE MOBILE NAV ON DESKTOPS*/
+#nav-mobile, .overlay-content, .closebtn {display: none}
+
+/* FONTS */
+body, input, textarea {font-family: 'Montserrat', sans-serif;}
+h1, h2, #nav, input[type=submit], .rslides, #my-Nav {font-family: 'Chelsea Market', cursive;}
+h2 {font-family: 'Chelsea Market', cursive;}
+
+/* GLOBALS */
+a {text-decoration: none; color: #000}
+p, h1, h2, h5 {padding: 10px}
+p {line-height: 22px}
+/* PAGE CONTAINER */
+#container {width: 90%; margin: 0 auto;}
+
+/* HEADER */
+#header {overflow: hidden}
+#logo {width: 40%; float: left; height: 150px; text-align: center;}
+#logo h1 {padding: 55px 0 0 0}
+#top-contact {position: relative; width: 60%; float: left; height: 150px;}
+.social {position: absolute; top: 40px; left: 48%; display: inline-block; text-align: center; width: 51%}
+#top-contact a:hover {color: #66AB8C}
+.fab {margin-left: 10px;} /* social media icons */
+.fas:nth-child(1) {color: #6EC4DB}
+.fas:nth-child(2) {color: #66AB8C }
+.fas:nth-child(3) {color: #FFF7C0; font-weight: bold }
+.fas:nth-child(4) {color: #FA7C92 }
+
+
+/* NAVIGATION */
+#nav {border-top: 1px solid #808080; border-bottom: 1px solid #808080; overflow: hidden}
+ul {list-style-type: none;}
+#nav ul li {float: left; padding: 1px 0 1px 0; width: 16.5%; text-align: center; transition: background-color 1s;}
+#nav ul li:hover {background-color: rgba(250,124,146, 0.2);}
+#nav ul li a {display: block; padding: 10px 0}
+#nav ul li:last-of-type {width: 17.5%}
+#nav li.active {background-color: #FA7C92; margin-bottom: 0px}
+#nav li.active:hover {background-color: #FFF7C0; transition: background-color 1s}
+#breadcrumbs {font-size: 0.725em; padding: 5px 0 5px 0px; border-bottom: 1px dotted grey}
+#breadcrumbs a:last-of-type {font-weight: bold}
+
+/* TESTIMONIALS SLIDER */
+#testimonials {height: 240px; margin: 20px 0; text-align: center; }
+.rslidesOne {position: relative; list-style: none; overflow: hidden; width: 100%; margin: 0;}
+.rslidesOne li {-webkit-backface-visibility: hidden; backface-visibility: hidden; position: absolute; display: none; width: 90%; left: 0;top: 0; background-color: #66AB8C; padding: 100px 0 100px 0px; text-align: center;}
+.rslidesOne li:first-child {position: relative; display: block;float: left;}
+.rslidesOne li:nth-child(odd) {background-color: #FA7C92;}
+
+/* MAIN PAGE SLIDER */
+#slider {margin: 40px 0;}
+.rslides {position: relative; list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0;}
+.rslides li {-webkit-backface-visibility: hidden; backface-visibility: hidden; position: absolute; display: none; width: 100%; left: 0; top: 0;}
+.rslides li:first-child {position: relative; display: block; float: left; }
+.rslides img {display: block; height: auto; float: left; width: 100%; border: 0; }
+
+/* MAIN CONTENT */
+#article {position: relative; padding: 0px 0 0 0px; width: 62%; float: left;}
+#article h1 {border-bottom: 1px dotted grey; padding-left: 0}
+#article p:first-of-type {padding-left: 0}
+/*fas{position: absolute; top:350px; left:550px; z-index: -1;}*/
+.info {border-bottom: 1px dotted grey; margin-bottom: 10px;}
+.info:nth-child(5) {border-bottom: none;}
+.info img {float: left; margin:10px 15px 0px 0;}
+
+.info p {margin-bottom: 30px; padding: 0 0 2px 0; max-height: 350px;}
+
+
+/* paragraph read more transitions */
+#babies, #wobblers, #toddlers, #after-school, #staff-Jane-Doe, #staff-Julia-Doe, #staff-John-Doe, #staff-Maria-Doe {transition: max-height 0.5s ease-in}
+
+
+
+span#extra-text, span#extra-text2, span#extra-text3, span#extra-text4 {display: none;}
+span#staff-text, span#staff-text2, span#staff-text3, span#staff-text4 {display: none}
+#more, #more2, #more3, #more4 {font-weight: bold}
+#staff-more, #staff-more2, #staff-more3, #staff-more4 {font-weight: bold}
+
+
+/* FORM */
+#aside {width: 31%; float: right; margin:20px 0 0 3%;}
+#sidebar-form {margin-bottom: 20px; border: 1px solid black; padding:20px 0}
+#sidebar-form  input[type=text] {width: 90%; padding: 8px; margin: 0 2% 3% 2.5%}
+#sidebar-form  input[type=submit] {width: 40%; padding: 8px; margin-left: 58%;background-color:#6EC4DB; border-radius:10px;}
+#sidebar-form input[type=submit]:hover{background-color:#FA7C92;}
+#sidebar-form label{margin:2%;}
+
+
+/* TABLE */
+#sidebar-opening {border: 1px solid black; padding: 20px 0; margin-bottom: 20px}
+table {padding-left: 10px; font-size: 0.825em}
+table td:nth-child(even) {padding-left: 10px;}
+
+/* FAQ */
+.faq{padding: 10px 0px}
+
+/* Accordion */
+
+.accordion {cursor: pointer; padding: 20px 0 20px 5px; width: 100%; text-align: left; border: none; font-weight: bold;  border-bottom: 1px solid #fff; background-color: #66AB8C; transition: background-color 2s}
+.accordion::before {content: '\002B'}
+#faq .accordion:first-child {border-top: 1px solid #fff}
+.accordion:visited, .accordion:link  {background-color: #6EC4DB;}
+.accordion:hover, .accordion:visited {background-color: #fff; outline: 0;}
+.accordion:focus {background-color: #fff; outline: 0}
+
+/* FAQ Answers */
+.panel {max-height: 0; overflow: hidden; transition: max-height 0.6s ease-out; width: 100%;}
+#faq .panel p {background-color: #6EC4DB; padding: 10px 10px; border-bottom: 1px solid #fff; margin-left: 0px}
+#faq .panel:last-child p{border-bottom: none}
+
+/* contact */
+#contact-form{border: 1px solid #888; margin:20px 0; padding-top:20px;}
+#contact-form textarea{width: 93%; height:200px; padding: 8px; margin: 0 2% 3% 2%;}
+#contact-form input[type=submit]{width: 20%;margin:0 0 20px 77%; padding: 8px;background-color:#6EC4DB; border-radius:10px;}
+#contact-form input[type=submit]:hover{background-color:#FA7C92;}
+#contact-form input[type=text]{width:93%;padding: 8px; margin: 0 2% 3% 2%}
+#contact-form label{margin:2%;}
+
+
+/* map */
+#map{width:100%;height:500px;margin-bottom:20px;}
+#article h2{padding-left:0;}
+
+
+/* Registration Form */
+#sidebar-form p{margin-bottom:10px;}
+#sidebar-form a {padding:10px 20px;background-color:#6EC4DB; border-radius:10px; display:block; width:81px; margin:auto; box-shadow: 2px 2px gray; font-family: 'Chelsea Market', cursive; }
+#sidebar-form a:hover{background-color:#FA7C92;}
+
+
+
+/* FOOTER */
+#footer {background-color: #FFF7C0; height: 220px; padding: 40px 0 10px 0;}
+.footer-nav {float: left; width: 33%}
+.footer-nav a:hover {color: #66AB8C}
+.footer-nav h5 {text-align: center}
+.footer-nav ul li {float: none; margin: 0 auto; padding: 0; text-align: center}
+.footer-nav:nth-child(3) {position: relative}
+.social-2 {position: absolute; top: 160px; left: 24%}
+#copyright {text-align: center}
+
+
+
+/***************************************************************************************/
+/* MEDIA QUERIES */
+/***************************************************************************************/
+@media only screen and (min-width:1281px){
+	#container {width: 70%; margin: 0 auto;}
+    .info p {margin-bottom: 70px}
+    p#outdoor-activities  {margin-bottom: 30px}
+    p#staff-Jane-Doe, p#staff-Julia-Doe, p#staff-John-Doe, p#staff-Maria-Doe, p#toddlers{margin-bottom: 50px}
+    .news {min-height: 100px}
+}
+
+
+/******************** 1366 screen *************************************************/
+@media only screen and (max-width:1366px){
+
+
+.info p {margin-bottom: 30px; padding: 0 0 2px 0; max-height: 350px;}
+#news {min-height: 230px}
+#sidebar-form  input[type=text] {width: 85%; padding: 8px; margin: 0 2% 3% 2.5%}
+#sidebar-form input[type=submit] {margin-left: 55%}
+#top-contact {height: 180px}
+.social {position: absolute; top: 40px; left: 42%; display: inline-block; text-align: center; width: 56%}
+.social-2 {left: 12%; top: 150px}
+#nav ul li {font-size: 14px}
+#contact-form input[type=text]{width:91%;}
+#contact-form input[type=submit]{margin-left:76%;}
+#contact-form textarea{width: 91%;}
+#testimonials {margin-bottom: 40px}
+
+}
+
+/******************** 768 screen *************************************************/
+@media only screen and (max-width:768px){
+/* FORM */
+#article h1 {text-align: center}
+#sidebar-form h2, #sidebar-opening h2 {text-align: center}
+#sidebar-form  input[type=text] {width: 85%; padding: 8px; margin: 0 2% 3% 2.5%}
+#top-contact {height: 180px}
+.social {position: absolute; top: 40px; left: 42%; display: inline-block; text-align: center; width: 56%}
+.social-2 {left: 0%; top: 150px}
+#nav ul li {font-size: 14px}
+#contact-form input[type=text]{width:91%;}
+#contact-form textarea{width: 91%;}
+
+}
+
+
+/******************** 480 screen *************************************************/
+@media only screen and (max-width:480px){
+
+#article h1 {text-align: center}
+#sidebar-form h2, #sidebar-opening h2 {text-align: center}
+#nav ul li {display: none} 
+
+/* MOBILE NAV */    
+#nav-mobile {margin: 15px 10px 0 0; float: right;}
+#nav-mobile div {width: 35px; height: 5px; background-color: black; margin: 6px 0;}
+
+
+/* The Overlay (background) */
+.overlay {height: 100%; width: 0; position: fixed; z-index: 100; left: 0; top: 0; background-color: rgb(255,247,192); background-color: rgba(255,247,192, 0.9); overflow-x: hidden; transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {position: relative; top: 25%; width: 100%; text-align: center; margin-top: 30px; display: block}
+
+/* The navigation links inside the overlay */
+.overlay a { padding: 8px; font-size: 36px; color: #000; display: block;
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {position: absolute; top: 20px; right: 45px; font-size: 60px;}
+/* END MOBILE NAV */
+
+	/* page container */
+#container {width: 98%; margin: 0 auto; min-width:340px;}
+/* header */
+#logo {width: 100%; float: none; height: 80px;}
+#top-contact{width:61%; height:220px; }
+.social{width:100%; left: 33%}
+/* navigation */
+#nav{display:none;}
+/* main content */
+#article{float:none;width:100%;}
+#testimonials {height: 240px; margin: 20px 0 70px 0; text-align: center;}
+#article p:first-of-type {padding-left: 10px}
+.info p {max-height: none}
+/* contact page form */
+#contact-form input[type=submit]{margin-left:78%}
+#contact-form input[type=text]{width:92%;}
+#contact-form textarea{width: 92%;}
+/* Form */
+#aside {width:100%; float: none;margin:0;}
+input[type=submit] {margin-left: 56%}
+/* footer */
+.footer-nav h5 {text-align: none;}
+ul li {float: none; width:100%; text-align: none;}
+#footer{height:520px;}
+.footer-nav{float:none;width:100%;margin:20px 0px;padding:0;}
+
+
+
+}
+
+
